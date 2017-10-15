@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CratorWorks
+    </title>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        
+        main {
+            flex: 1 0 auto;
+        }
+        
+        .verical {
+            align-self: right;
+        }
+        
+        .demo-card-image.mdl-card {
+            margin-top: 10px;
+            width: auto;
+            height: 256px;
+            background: url('images/contact.jpeg') center / cover;
+            border-radius: 20px 20px 20px 20px;
+        }
+        
+        .demo-card-image>.mdl-card__actions {
+            height: auto;
+            padding: auto;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px 20px 20px 20px;
+        }
+        
+        .demo-card-image__filename {
+            color: #fff;
+            font-size: 48px;
+            font-weight: 500;
+        }
+    </style>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="grey darken-4">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <div class="fixed-action-btn toolbar">
+        <a class="btn-floating btn-large orange pulse" id="menu">
+            <i class="large material-icons">menu</i>
+        </a>
+        <ul>
+            <li class="waves-effect waves-light" id="l1"><a href="#!"><i class="material-icons">http</i></a></li>
+            <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">web</i></a></li>
+            <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">desktop_windows</i></a></li>
+            <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">android</i></a></li>
+            <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">contact_phone</i></a></li>
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="demo-card-image mdl-card mdl-shadow--2dp">
+                <div class="mdl-card__title mdl-card--expand"></div>
+                <div class="mdl-card__actions">
+                    <span class="demo-card-image__filename">CratorWorks : Get In Touch</span>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+            <div class="card z-depth-5 hoverable grey darken-3">
+                <div class="card-content white-text">
+                    <span class="card-title">Have An Enquiry , Feel Free To Send Us A Message</span>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="fname" type="text" class="validate">
+                                        <label for="fname">Full Name</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input id="phone" type="tel" class="validate">
+                                        <label for="phone">Contact Number</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <input id="category" type="text" class="validate">
+                                        <label for="category">Category(Web App , Desktop App , Android App , Other)</label>
+                                    </div>
+                                    <div class="input-field col s12">
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <label for="textarea1">Message</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <button class="btn waves-effect waves-light orange" type="submit" name="action">Submit
+                                <i class="material-icons right">send</i>
+                              </button>
+                </div>
+            </div>
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer grey darken-3">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">CratorWorks</h5>
+                    <p class="grey-text text-lighten-4">At CratorWorks , We are dedicated in delivering the best possible experience and best possible product to our customers</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Navigate</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Web Applications</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Desktop Applications</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Android Applications</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Get In Touch</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Copyright - CratorWorks Corporation
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

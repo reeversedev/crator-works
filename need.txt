@@ -1,0 +1,16 @@
+1.Enquiry / Sugesstion:
+	1.1 Name
+	1.2 Email Id
+	1.3 Category of Enquiry / Sugesstion(Web App , Desktop App , Android App , Other)
+	1.4 Message (Limit 1000 words)
+2.Order Details:
+	2.1 Order Id(generated with a set pattern systematically)
+	2.2 Name
+	2.3 Email Id
+	2.4 Date Of Order
+	2.5 Category of Order (Web App , Desktop App , Android App)
+	2.6 Date of Completion of project
+	2.7 Type of Order(I will brief you about this)
+	2.8 Amount Paid with date of payment
+	2.9 Mode Of Payment (Paypal , Paytm , Credit Card , Debit Card ,Etc.)
+	
