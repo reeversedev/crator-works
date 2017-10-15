@@ -7,15 +7,18 @@
     </title>
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
     <style>
         body {
             display: flex;
             min-height: 100vh;
             flex-direction: column;
+            font-family: 'Vollkorn', serif;
         }
         
         main {
             flex: 1 0 auto;
+            font-family: 'Vollkorn', serif;
         }
         
         .verical {
@@ -27,20 +30,19 @@
             width: auto;
             height: 256px;
             background: url('images/contact.jpeg') center / cover;
-            border-radius: 20px 20px 20px 20px;
         }
         
         .demo-card-image>.mdl-card__actions {
             height: auto;
             padding: auto;
             background: rgba(0, 0, 0, 0.2);
-            border-radius: 20px 20px 20px 20px;
         }
         
         .demo-card-image__filename {
             color: #fff;
-            font-size: 48px;
+            font-size: 36px;
             font-weight: 500;
+            font-family: 'Vollkorn', serif;
         }
     </style>
 
@@ -51,7 +53,25 @@
 <body class="grey darken-4">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <div class="fixed-action-btn toolbar">
+    <script>
+        $(document).ready(function() {
+            $('.tooltipped').tooltip({
+                delay: 50
+            });
+        });
+    </script>
+    <div class="fixed-action-btn vertical">
+        <a class="btn-floating btn-large orange pulse">
+            <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        </ul>
+    </div>
+    <div class="fixed-action-btn toolbar" style=" top: 10px;">
         <a class="btn-floating btn-large orange pulse" id="menu">
             <i class="large material-icons">menu</i>
         </a>
@@ -60,6 +80,7 @@
             <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">web</i></a></li>
             <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">desktop_windows</i></a></li>
             <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">android</i></a></li>
+            <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">new_releases</i></a></li>
             <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">contact_phone</i></a></li>
         </ul>
     </div>
@@ -131,6 +152,7 @@
                         <li><a class="grey-text text-lighten-3" href="#!">Web Applications</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Desktop Applications</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Android Applications</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">News & Blog</a></li>
                         <li><a class="grey-text text-lighten-3" href="#!">Get In Touch</a></li>
                     </ul>
                 </div>
